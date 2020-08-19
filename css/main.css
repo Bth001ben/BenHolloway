@@ -1,0 +1,238 @@
+@font-face {
+    font-family: "Cereal";
+    src: url(fonts/AirbnbCerealMedium.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Cereal Book";
+    src: url(fonts/AirbnbCerealBook.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Cereal Bold";
+    src: url(fonts/AirbnbCerealBold.ttf) format("ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-style: "Cereal Bold", sans-serif;
+    color: #1a1b1f;
+}
+
+a:hover {
+    font-weight: 600;
+}
+
+body {
+    background: white;
+    color: black;
+    font-family: "Cereal", sans-serif;
+    margin: 50px 0 50px 0;
+}
+
+header {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    height: 50px;
+    background: white;
+    height: 100px;
+}
+
+.logo {
+    position: fixed;
+    top: 30px;
+    left: 60px;
+}
+
+.logoImg {
+    height: 40px;
+    padding-top: 5px;
+}
+
+header .navLinks {
+    position: fixed;
+    top: 30px;
+    right: 60px;
+}
+
+header a {
+    display: inline-block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.opening, .openingAbout {
+    width: 80%;
+    margin: auto;
+}
+
+.intro, .introAbout {
+    width: 95%;
+    padding-bottom: 30px;
+}
+
+.introAbout p {
+    line-height: 28px;
+}
+
+.passion {
+    line-height: 28px;
+}
+
+.projects, .candid {
+    width: 95%;
+}
+
+.projects ul {
+    list-style-type: none;
+}
+
+.projects .mobileImg, .projects .desktopImg {
+    width: 100%;
+    padding: 10px;
+}
+
+.desktopImg {
+    display: none;
+}
+
+.candidImg {
+    width: 350px; 
+}
+
+.contact {
+    background: #F4F4F4;
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    padding: 10px;
+}
+
+.contact label {
+    text-transform: uppercase;
+}
+
+form p {
+    padding: 10px 0;
+}
+
+input {
+    height: 40px;
+    width: 100%;
+}
+
+input, label {
+    display: block;
+}
+
+textarea {
+    height: 80px;
+    width: 100%;
+}
+
+button {
+    background: #1a1b1f;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+button:hover {
+    background: #32343a;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    text-align: center;
+}
+
+footer a {
+    display: inline-block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 551px) {
+    body {
+        margin: 100px 0 0 0;
+    }
+    
+    header {
+        visibility: visible;
+    }
+
+    .opening {
+        display: flex;
+    }
+
+    .openingAbout {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .intro {
+        width: 25%;
+        padding: 20px;
+    }
+
+    .introAbout {
+        width: 50%;
+    }
+
+    .projects {
+        width: 70%;
+    }
+
+    .candid {
+        width: 50%;
+    }
+
+    .mobileImg {
+        display: none;
+    }
+
+    .desktopImg {
+        display: inline-block;
+    }
+
+    .candidImg {
+        margin-left: 20%;
+    }
+
+    .aboutTxt {
+        width: 90%;
+        margin: auto;
+    }
+
+    input, textarea {
+        width: 70%;
+    }
+
+    button {
+        width: 100px;
+    }
+
+    footer {
+        visibility: hidden;
+    }
+}

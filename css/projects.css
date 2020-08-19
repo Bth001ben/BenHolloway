@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Cereal";
+    src: url(fonts/AirbnbCerealMedium.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Cereal Book";
+    src: url(fonts/AirbnbCerealBook.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Cereal Bold";
+    src: url(fonts/AirbnbCerealBold.ttf) format("ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-style: "Cereal Bold", sans-serif;
+    color: #1a1b1f;
+}
+
+a:hover {
+    font-weight: 600;
+}
+
+body {
+    background: white;
+    color: black;
+    font-family: "Cereal", sans-serif;
+}
+
+header {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    height: 50px;
+    background: white;
+    height: 100px;
+}
+
+.logo {
+    position: fixed;
+    top: 30px;
+    left: 60px;
+}
+
+.logoImg {
+    height: 40px;
+    padding-top: 5px;
+}
+
+header .navLinks {
+    position: fixed;
+    top: 30px;
+    right: 60px;
+}
+
+header a {
+    display: inline-block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    text-align: center;
+}
+
+footer a {
+    display: inline-block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 551px) {
+    body {
+        margin: 100px 0 0 0;
+    }
+    
+    header {
+        visibility: visible;
+    }
+
+    footer {
+        visibility: hidden;
+    }
+}
