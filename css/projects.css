@@ -1,103 +1,233 @@
 @font-face {
-    font-family: "Cereal";
-    src: url(fonts/AirbnbCerealMedium.ttf) format("ttf");
+  font-family: "Cereal";
+  src: url(fonts/AirbnbCerealMedium.ttf) format("ttf");
 }
 
 @font-face {
-    font-family: "Cereal Book";
-    src: url(fonts/AirbnbCerealBook.ttf) format("ttf");
+  font-family: "Cereal Book";
+  src: url(fonts/AirbnbCerealBook.ttf) format("ttf");
 }
 
 @font-face {
-    font-family: "Cereal Bold";
-    src: url(fonts/AirbnbCerealBold.ttf) format("ttf");
+  font-family: "Cereal Bold";
+  src: url(fonts/AirbnbCerealBold.ttf) format("ttf");
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-transform: uppercase;
-    font-size: 12px;
-    font-style: "Cereal Bold", sans-serif;
-    color: #1a1b1f;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-style: "Cereal Bold", sans-serif;
+  color: #1a1b1f;
 }
 
 a:hover {
-    font-weight: 600;
+  font-weight: 600;
+}
+
+h2 {
+  padding: 60px 0;
+  font-size: 34px;
+  line-height: 44px;
+}
+
+h3 {
+  color: #72c387;
+  font-size: 24px;
+  line-height: 31px;
+  padding: 30px 0;
+}
+
+h4 {
+  color: #8b8585;
 }
 
 body {
-    background: white;
-    color: black;
-    font-family: "Cereal", sans-serif;
+  background: white;
+  color: black;
+  font-family: "Cereal", sans-serif;
+  text-align: center;
 }
 
 header {
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 10px 0;
-    height: 50px;
-    background: white;
-    height: 100px;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  height: 50px;
+  background: white;
+  height: 100px;
 }
 
 .logo {
-    position: fixed;
-    top: 30px;
-    left: 60px;
+  position: fixed;
+  top: 30px;
+  left: 60px;
 }
 
 .logoImg {
-    height: 40px;
-    padding-top: 5px;
+  height: 40px;
+  padding-top: 5px;
 }
 
 header .navLinks {
-    position: fixed;
-    top: 30px;
-    right: 60px;
+  position: fixed;
+  top: 30px;
+  right: 60px;
 }
 
 header a {
-    display: inline-block;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.content img {
+  width: 100%;
+}
+
+.openingImg {
+  margin: 120px 0;
+}
+
+iframe {
+  width: 100%;
+}
+
+.content {
+  width: 80%;
+  margin: auto;
+}
+
+.desktopImg {
+  display: none;
+}
+
+.team,
+.currentAvailability {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: space-between;
+  justify-content: center;
+}
+
+.role,
+.timeFrame,
+.client,
+.teammates {
+  width: 50%;
+}
+
+.bar {
+  width: 100%;
+  height: 30px;
+}
+
+.bar2 {
+  width: 100%;
+  height: 240px;
+}
+
+.bar3 {
+  width: 100%;
+  height: 120px;
+}
+
+.problemSpaceImg,
+.usersImg {
+  margin: 120px 0;
+}
+
+.problemSolving,
+.personaImg,
+.journeyTwo,
+.happypath,
+.TaskFlows,
+.Testing {
+  margin-bottom: 240px;
+}
+
+.personaOne,
+.personaTwo,
+.journeyOne, 
+.SecondHelperPrototypeOne {
+  margin-bottom: 120px;
+}
+
+.optionOne {
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.optionTwo {
+  width: 43%;
+  margin-right: 3%;
+}
+
+.optionThree {
+  width: 45%;
+  margin-left: 4%;
+}
+
+.bothImg {
+  margin-bottom: 30px;
+}
+
+.KeyScreens img {
+  margin-bottom: 30px;
+}
+
+.TaskFlows img,
+.FinalDesigns iframe {
+  margin-top: 60px;
+}
+
+.Testing h3 {
+  margin-bottom: 30px;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: white;
-    text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  text-align: center;
 }
 
 footer a {
-    display: inline-block;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 551px) {
-    body {
-        margin: 100px 0 0 0;
-    }
-    
-    header {
-        visibility: visible;
-    }
+  body {
+    margin: 100px 0 0 0;
+  }
 
-    footer {
-        visibility: hidden;
-    }
+  .mobileImg {
+    display: none;
+  }
+
+  .desktopImg {
+    display: inline-block;
+  }
+
+  header {
+    visibility: visible;
+  }
+
+  footer {
+    visibility: hidden;
+  }
 }
